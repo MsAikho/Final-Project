@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Londrina+Sketch&family=Qwitcher+Grypen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
-   <div class="weather-app">
+    <div class="weather-app">
       <header>
         <form class="search-form" id="search-form">
           <input
@@ -22,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-city" id="city">Durban</h1>
+            <h1 class="weather-city" id="city"></h1>
             <p class="weather-details">
               <span id="time"></span> ,<span id="description"></span>
               <br />
@@ -33,15 +41,38 @@
             </p>
           </div>
           <div class="weather-temperature-container">
-            <div id = "icon"></div>
-             <div class="weather-temperature" id="temperature"></div>
+            <div id="icon"></div>
+            <div class="weather-temperature" id="temperature"></div>
             <div class="weather-units">°C</div>
-          
           </div>
         </div>
-      </main>
+        <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Saturday</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+               <div class="weather-forecast-temperature">
+                <strong>28°</strong>
+               </div>
+               <div class="weather-forecast-temperature">29°</div>
+               </div>
+            </div>
 
-      <footer>
+             <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sunday</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+               <div class="weather-forecast-temperature">
+                <strong>28°</strong>
+               </div>
+               <div class="weather-forecast-temperature">29°</div>
+               </div>
+            </div>
+              
+        </div>
+      </main>
+         <footer>
         This project was coded by
         <a href="https://github.com/MsAikho" target="_blank">Akhona Stuurman</a
         >, is
@@ -49,14 +80,19 @@
           href="https://github.com/MsAikho/Vanilla-weather-search"
           target="_blank"
           >open-sourced on GitHub
-        </a>
-        and
+        </a>       
+          and
         <a href="https://vanillaforecast44.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
+          >hosted on Netlify</a>
+        
       </footer>
     </div>
     <script src="index.js"></script>
-    </p>
   </body>
-</html>
+</html>     
+          
+         
+            
+
+      
+        
