@@ -1,0 +1,98 @@
+body {
+  background-color: #f9f7fe;
+  londrina-sketch-regular {
+    font-family: "Londrina Sketch", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  a {
+    color: blueviolet;
+  }
+}
+.weather-app {
+  background: white;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.06);
+  border-radius: 18px;
+  padding: 40px;
+}
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
+}
+
+.search-form-input {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 8px;
+  width: 80%;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+.search-form-button {
+  background: blueviolet;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  color: white;
+  margin-left: 5px;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-city {
+  margin: 0px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.weather-details {
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0, 0, 0, 08);
+  font-weight: 500px;
+}
+
+.weather-details strong {
+  color: tomato;
+}
+
+.weather-temperature-container {
+  display: flex;
+}
+
+.weather-icon {
+  width: 88px;
+  height: 88px;
+}
+
+.weather-temperature {
+  font-size: 70px;
+  font-weight: bold;
+  margin-left: 10px;
+  line-height: 88px;
+}
+
+.weather-units {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(0, 0, 0, 08);
+}
+main {
+  padding: 30px 0;
+}
+
+.weather-temperature {
+}
